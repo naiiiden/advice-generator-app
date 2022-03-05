@@ -10,10 +10,25 @@ body {
   width: 100%;
   min-height: 100vh;
   font-family: Manrope, sans-serif;
+  background-color: #1f2632;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+main {
+  padding: 1rem;
+}
+
+main .container {
+  padding: 1.5rem;
+  background-color: #323a49;
+  border-radius: .5rem;
+}
+
+main .container p {
+  color: #cee3e9;
 }
 /*# sourceMappingURL=style.css.map */
