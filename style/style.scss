@@ -17,6 +17,8 @@ body {
     min-height: 100vh;
     font-family: Manrope, sans-serif;
     background-color: $dark-blue;
+    display: grid;
+    place-content: center;
 }
 
 img {

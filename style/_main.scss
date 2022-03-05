@@ -2,12 +2,46 @@ main {
     padding: 1rem;
     
     .container {
-        padding: 1.5rem;
+        max-width: 375px;
+        padding: 0 1.5rem;
         background-color: $dark-grayish-blue;
         border-radius: .5rem;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;        min-height: 10rem;
 
-        p {
+        .text_divider_container {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+        .id {
+            padding-top: 2rem;
+            color: $neon-green;
+            font-size: .7rem;
+            letter-spacing: .2rem;
+        }
+
+        .text {
             color: $light-cyan;
+            font-size: 1.3rem;
+        }
+
+        .button {
+            background: $neon-green;
+            border: none;
+            display: flex;
+            position: relative;
+            bottom: -1.75rem;
+            margin: auto;
+            text-align: center;
+            padding: 1rem;
+            border-radius: 100%;
+
+            .rotate {
+                transform: rotate(360deg);
+                transition: .4s;
+            }
         }
     }
 }
