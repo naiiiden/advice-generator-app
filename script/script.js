@@ -16,6 +16,3 @@ async function fetchAdvice() {
 }
 
 adviceButton.addEventListener("click", fetchAdvice);
-adviceButton.addEventListener("click", () => {
-    dice.classList.toggle("rotate");
-});

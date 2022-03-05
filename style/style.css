@@ -73,10 +73,30 @@ main .container .button {
   border-radius: 100%;
 }
 
-main .container .button .rotate {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  -webkit-transition: .4s;
-  transition: .4s;
+@media screen and (min-width: 1024px) {
+  main .container {
+    min-width: 30rem;
+  }
+  main .container .id {
+    font-size: .8rem;
+  }
+  main .container .text {
+    font-size: 1.5rem;
+  }
+  main .container .button {
+    cursor: pointer;
+  }
+  main .container .button:hover {
+    -webkit-box-shadow: #52ffa8 0px 5px 25px;
+            box-shadow: #52ffa8 0px 5px 25px;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  main .container .button:hover #dice {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
 }
 /*# sourceMappingURL=style.css.map */

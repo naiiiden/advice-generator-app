@@ -37,11 +37,35 @@ main {
             text-align: center;
             padding: 1rem;
             border-radius: 100%;
+        }
+    }
+}
 
-            .rotate {
-                transform: rotate(360deg);
-                transition: .4s;
+@media screen and (min-width: 1024px) {
+    main {
+        .container {
+            min-width: 30rem;
+    
+            .id {
+                font-size: .8rem;
             }
+
+            .text {
+                font-size: 1.5rem;
+            }
+
+            .button {
+                cursor:pointer;
+
+                &:hover {
+                    box-shadow: $neon-green 0px 5px 25px;
+                    transition: .2s;
+                    #dice {
+                        transform: rotate(360deg);
+                        transition: .4s;
+                    }
+                }
+            } 
         }
     }
 }
